@@ -1,0 +1,358 @@
+body{
+    font-family: system-ui;
+margin: 0;
+padding: 0;
+    /* background-image: url(./images/fondo/uncs.jpg); */
+    background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40)),
+    url(./images/fondo/unsc4.jpg) no-repeat center center fixed;
+    /* background-repeat: no-repeat;
+    background-position: center center ;
+    background-attachment: fixed; */
+    background-size: cover;
+}
+header{
+    background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10)),
+    url(./images/fondo/header2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-shadow: 0 7px 8px -3px grey;
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 99;
+}
+.container{
+    max-width: 1144px;
+    /* background-color: blue; */
+    text-align: center;
+    margin: auto;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    /* background-color: brown; */
+}
+.header-section div{
+    position: relative;
+
+}
+.header-section p{
+    position: absolute;
+    top: -24px;
+    right: 8px;
+    background-color: #fff;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: #8E7BEF;
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
+}
+.logo{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border: solid;
+    color: #fcda68;
+    border-radius: 5%;
+    
+}
+
+.cart{
+    width: 3rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+/* float cart*/
+.cart-products{
+    position: absolute!important;
+    top: 82px;
+    display: none;
+    right: -18px;
+    /* background-color: #1a1a24; */
+    background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)),
+    url(./images/fondo/fondoesp.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    min-width: 290px;
+    max-height: 75vh;
+    overflow: auto;
+    border: solid #8E7BEF;
+}
+.cart-products::-webkit-scrollbar{
+    width: 5px;
+    background-color: #8E7BEF;
+}
+.cart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+/*end header*/
+.products{
+    padding-top: 10rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: #fcda68; */
+}
+
+.carts{
+    max-width: 250px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 100%);
+    padding-bottom: 34px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition-duration: .5s;
+    /* background-color: #fff; */
+    background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40)),
+    url(./images/fondo/unsc2) no-repeat center center fixed;
+    /* background-color: rgb(7, 0, 0); */
+}
+.carts:hover{
+    transform: scale(0.5);
+    -webkit-transform: scale(1.1);
+}
+.carts img{
+    width: 70%;
+    height: 15rem;
+    padding-top: 1rem;
+    opacity: 90%;
+    /* background-color: #8E7BEF; */
+}
+.carts p{
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    color: #8E7BEF;
+    margin-bottom: 24px;
+    /* background-color: #fcda68; */
+}
+.carts div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: rgb(0, 235, 129);
+    color: #fff;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.carts div{
+    position: relative;
+    /* background-color: #fcda68; */
+}
+.carts a{
+    font-family: system-ui;
+    text-decoration: none;
+    background: red;
+    padding: 9px 23px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carts a:hover{
+    background: #fff;
+    color: red;
+    border: solid 2px red;
+    transition-duration: .3s;
+}
+
+/*float cart*/
+.cart-products .item img{
+    width: 7rem;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px #8E7BEF;
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    color: #ebe1e1;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    color: #fcda68;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item span{
+    /* background-color: red; */
+    /* border:  1px solid red; */
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #8E7BEF;
+    font-family: system-ui;
+    cursor: pointer;
+}
+.cart-products h3{
+    margin-bottom: 0;
+    color: #8E7BEF;
+}
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+    color: #8E7BEF;
+}
+.price-total{
+    color: #fcda68;
+}
+.Total{
+    color: #8E7BEF;
+}
+/*stye to btn close*/
+p.close-btn{
+    top: -4px;
+    right: 6px;
+    background: none;
+    cursor: pointer;
+    color: #c51919;
+}
+p.author {
+    display: flex;
+    color: #26263a;
+    justify-content: center;
+    FONT-VARIANT: JIS04;
+    margin-top: 3%;
+    gap: 7px;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fcda68;
+}
+/* Responsive */
+@media(max-width:768px){
+    body{
+        /* background-image: url(./images/fondo/uncs.jpg); */
+        background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40)),
+        url(./images/fondo/unsc2) no-repeat center center fixed;
+        /* background-repeat: no-repeat;
+        background-position: center center ;
+        background-attachment: fixed; */
+        background-size: cover;
+    }
+    .container{
+        max-width: 614px;
+        /* background-color: blue; */
+        text-align: center;
+        margin: auto;
+    }
+    .carts{
+        max-width: 7rem;
+        height: 12.5rem;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 100%);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        
+        cursor: pointer;
+        transition-duration: .5s;
+        /* background-color: #fff; */
+        background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40)),
+        url(./images/fondo/header2.jpg) no-repeat center center fixed;
+        /* background-color: rgb(7, 0, 0); */
+        opacity: 90%;
+    }
+    
+    .carts img{
+        width: 80%;
+        height: 8rem;
+        padding-top: 0.5rem;
+        opacity: 90%;
+        /* background-color: #8E7BEF; */
+    }
+    .carts p{
+        font-family: system-ui;
+        font-weight: 500;
+        height: 1rem;
+        padding: 0 20px;
+        color: #fcda68;
+        margin-bottom: 10px;
+        font-size: 8px;
+        /* background-color: #fcda68; */
+    }
+    .carts div p{
+        position: absolute;
+        top: 0;
+        right: 0px;
+        background-color: rgb(0, 235, 129);
+        color: #fff;
+        padding: 2px 7px 4px 15px;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    }
+    .carts a{
+        font-size: 7px;;
+    }
+    /*float cart*/
+    .cart-products{
+        position: absolute!important;
+        top: 110px;
+        display: none;
+        right: 5px;
+        /* background-color: #1a1a24; */
+        background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)),
+        url(./images/fondo/fondoesp.jpg) no-repeat center center fixed;
+        background-size: cover;
+        padding: 0 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+        min-width: 270px;
+        min-height: 110px;
+        max-height: 60vh;
+        overflow: auto;
+        border: solid #8E7BEF;
+    }
+.cart-products .item img{
+    width: 5rem;
+}
+.cart-products .item .item-content{
+    margin: 0 10px;
+    width: 120px;
+}
+.cart-products .item .item-content h5{
+    font-size: 10px;
+}
+.cart-products .item .item-content h6{
+    color: #fcda68;
+    font-size: 13px;
+}
+
+
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+    color: #8E7BEF;
+}
+.titulocaja{
+    font-size: 15px;
+    text-align: center;
+}
+.price-total{
+    font-size: 20px;
+    color: #fcda68;
+}
+.Total{
+    font-size: 25;
+    color: #8E7BEF;
+}
+p.author {
+    color: #39397c;
+    font-size: 12px;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/logo/zorrocara - copia.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.N.S.C</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="images/logo/logo uncs.jpg" alt="" onclick="PlayAudio()">
+            <div>
+                <img onclick="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">cerrar</p>
+                <h3 class="titulocaja">shopping</h3>
+                <div class="card-items">
+                    <!-- <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">$300</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span>X</span>
+                    </div>
+    
+                    <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">$350</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div> -->
+                </div>
+                <h2 class="Total">Total:$<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="images/products/jefe maestro.jpg" alt="">
+                    <p>$<span>300</span></p>
+                </div>
+                <p class="title">"Figura de accion-"Jefe Maestro"</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="images/products/inquisidor.webp" alt="">
+                    <p>$<span>350</span></p>
+                </div>
+                <p class="title">"Figura de accion-"Jefe Maestro"</p>
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="images/products/jefe maestro.jpg" alt="">
+                    <p>$<span>155</span></p>
+                </div>
+                <p class="title">"Figura de accion-"Jefe Maestro"</p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="images/products/jefe maestro.jpg" alt="">
+                    <p>$<span>200</span></p>
+                </div>
+                <p class="title">"Figura de accion-"Jefe Maestro"</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="images/products/jefe maestro.jpg" alt="">
+                    <p>$<span>190</span></p>
+                </div>
+                <p class="title">"Figura de accion-"Jefe Maestro"</p>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="images/products/jefe maestro.jpg" alt="">
+                    <p>$<span>450</span></p>
+                </div>
+                <p class="title">"Figura de accion-"Jefe Maestro"</p>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="images/products/jefe maestro.jpg" alt="">
+                    <p>$<span>299</span></p>
+                </div>
+                <p class="title">"Figura de accion-"Jefe Maestro"</p>
+                <a href="" data-id="7" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="images/products/jefe maestro.jpg" alt="">
+                    <p>$<span>500</span></p>
+                </div>
+                <p class="title">"Figura de accion-"Jefe Maestro"</p>
+                <a href="" data-id="8" class="btn-add-cart">add to cart</a>
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <audio id="audio" autoplay loop>
+        <source src="audio/Halo Combat Evolved OST _26 Halo(MP3_70K).mp3" type="audio/mpeg">
+    Este navegador no acepta formatos de audio
+    </audio>
+
+    <footer>
+        <p class="author">🦊 Hecho por <a href="https://github.com/JAEB720" target="_blank">JAEB720</a></p>
+    </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+            document.getElementById("products-id").style.display = "none";
+        }
+        function PlayAudio(){
+            document.getElementById("audio").play();
+        }
+
+    </script>
+    <script src="./carrito.js" ></script>
+</body>
+</html>
